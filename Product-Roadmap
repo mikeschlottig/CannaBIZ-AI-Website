@@ -1,0 +1,79 @@
+🌿 CannaBIZ AI: Commercial Product Roadmap (Q3 2025 - Q3 2026)
+Product Vision: To become the indispensable, compliance-first AI platform that empowers cannabis businesses to grow revenue through intelligent automation and deep customer insights.
+
+Guiding Principles:
+
+Compliance-First: Every feature will be built with the complex regulatory landscape as a primary design constraint.
+
+User-Centric Design: We will work directly with a cohort of pilot customers to ensure the product solves real-world pain points.
+
+Agile & Iterative: We will build, measure, and learn in focused sprints, delivering value incrementally.
+
+Scalable & Secure: The architecture will be designed for enterprise-grade reliability, security, and performance from day one.
+
+Phase 1: Foundation & Core MVP (Closed Beta)
+Timeline: August 2025 - October 2025 (3 Months)
+
+Primary Goal: To build and deploy a stable, compliant, and valuable Minimum Viable Product (MVP) for a closed beta group of 5-10 cannabis retailers. The focus is on data ingestion, core CRM functionality, and foundational business intelligence.
+
+Key Deliverables & Features	Team Focus	Success Metrics
+✅ Backend: Setup Django project, user auth, and API framework (DRF).	Backend: Lead effort. Model data, build core APIs, implement Shopify sync logic.	🚀 MVP successfully deployed to AWS infrastructure.
+✅ Database: Finalize and deploy PostgreSQL schema.	Frontend: Build the UI shell for the dashboard, CRM, and inventory views. Connect to initial APIs.	🔄 99%+ accuracy and reliability for Shopify order, product, and customer sync.
+✅ Shopify Sync: Reliable, one-way sync for Customers, Products, and Orders.	DevOps: Establish AWS foundation (Terraform), CI/CD pipeline (GitHub Actions), and secure VPC.	💬 All pilot customers are onboarded and actively using the platform weekly.
+✅ UI: Functional BI Dashboard (KPIs), Customer List/Detail views.	Product/Biz: Recruit and manage the pilot program. Gather structured feedback.	⭐ Positive qualitative feedback on core usability and value.
+✅ Compliance: Integrate a third-party age verification service on customer creation.		
+
+Export to Sheets
+Phase 2: The Intelligence Layer (Predictive Analytics)
+Timeline: November 2025 - January 2026 (3 Months)
+
+Primary Goal: To transition the platform from descriptive analytics (what happened) to predictive analytics (what will happen). This phase introduces the Python Analytics Engine and populates the UI with actionable AI insights.
+
+Key Deliverables & Features	Team Focus	Success Metrics
+✅ Analytics Engine: Deploy the Python (FastAPI) service.	AI/ML: Lead effort. Build, train, and validate v1 predictive models. Create data pipelines.	🧠 Churn Prediction model achieves >80% accuracy on validation data.
+✅ AI Models (v1): Implement and deploy models for Churn Prediction & LTV Forecasting.	Backend: Build robust internal APIs for the Django service to communicate with the Analytics Engine.	💰 LTV predictions are within a 20% margin of error when compared to 3-month actuals.
+✅ Dynamic Insights: The ai_insights DB table is now populated nightly.	Frontend: Integrate dynamic data into the AI Insight cards on the dashboard and customer detail page.	📈 Pilot users report that at least 25% of AI insights are "highly valuable and actionable."
+✅ Performance: select_related / prefetch_related optimizations for all core queries.	DevOps: Implement MLOps pipeline for model versioning and deployment (MLflow).	📊 Platform performance remains stable with a sub-300ms API response time for p95.
+
+Export to Sheets
+Phase 3: Autonomous Engagement (Proactive Marketing)
+Timeline: February 2026 - April 2026 (3 Months)
+
+Primary Goal: To introduce proactive, automated marketing tools that directly leverage the new intelligence layer, creating a clear differentiator and ROI driver for customers.
+
+Key Deliverables & Features	Team Focus	Success Metrics
+✅ Promotion Engine: The personalized-promotion API endpoint is live.	Full Stack: A coordinated effort across all engineering teams.	🎯 At least 50% of pilot customers have designed and launched one SMS campaign.
+✅ SMS Campaigns: Integrate Twilio API. Build a UI for segmenting customers and sending compliant SMS marketing campaigns.	Backend: Handle Twilio integration, queueing for SMS sends, and response tracking.	💸 Campaigns launched from the platform show a statistically significant lift in sales.
+✅ Marketing Compliance: Engine to check outbound SMS content against state-specific rules (prohibited words, required disclaimers).	Frontend: Design and build the campaign creation wizard and the Inventory Hub UI.	🤖 AI Sales Strategy suggestions on the Inventory Hub are rated as "helpful" by users.
+✅ Inventory Hub: Launch the Inventory Hub UI, integrating sales strategy suggestions from the Analytics Engine.	AI/ML: Fine-tune models based on new engagement data. Develop NLP for compliance checks.	✅ 100% of outbound marketing messages pass through the compliance engine.
+
+Export to Sheets
+Phase 4: Scale & Enterprise Readiness (Public Launch Prep)
+Timeline: May 2026 - July 2026 (3 Months)
+
+Primary Goal: To harden the platform for a public launch by focusing on security, scalability, billing, and self-service capabilities.
+
+Key Deliverables & Features	Team Focus	Success Metrics
+✅ Security: Complete third-party penetration testing and prepare for SOC 2 Type II audit.	DevOps/Backend: Lead effort. Focus on security hardening, load testing, and infrastructure optimization.	🛡️ No critical vulnerabilities found during penetration testing.
+✅ Billing: Integrate Stripe for subscription management and automated billing.	Frontend: Build out the "Settings" section, including user management, billing, and onboarding flows.	💳 Successful end-to-end processing of payments via Stripe integration in a sandbox environment.
+✅ Self-Service: Automated user registration, onboarding tutorials, and Shopify store connection wizard.	Product/Biz: Finalize tiered pricing strategy and prepare all launch marketing materials.	⚙️ A new user can sign up, connect their Shopify store, and see their data populated without manual intervention.
+✅ Performance: Implement advanced caching strategies and database read replicas to handle increased load.		⏱️ System maintains performance SLAs under simulated load tests of 500 concurrent users.
+
+Export to Sheets
+Phase 5: Public Launch & Growth
+Timeline: August 2026 and beyond
+
+Primary Goal: To successfully launch CannaBIZ AI to the public, establish a strong market presence, and create a repeatable cycle of user feedback and feature iteration.
+
+Key Deliverables & Features	Team Focus	Success Metrics
+✅ Go-To-Market: Launch new marketing website, execute PR and digital ad campaigns.	All Teams: A company-wide effort focused on launch stability, customer support, and rapid response to feedback.	🚀 100+ paying customers within 6 months of launch.
+✅ Mobile App (v1): Begin development of the React Native mobile app for on-the-go business insights.	Development team shifts to a sprint-based cycle focused on the most requested features from the new user base.	📈 Achieve the $2M ARR target by the end of the first year post-launch.
+✅ Partner API: Release a v1 REST API for third-party developers and larger enterprise customers to integrate with.		⭐ Achieve a Net Promoter Score (NPS) of 50+.
+✅ Expansion: Add compliance rule sets for 5 new states.		🔒 Maintain >80% annual customer retention.
+
+Export to Sheets
+
+
+
+
+
